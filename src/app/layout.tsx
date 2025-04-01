@@ -12,7 +12,7 @@ const inter = Inter({ subsets: ["latin"] });
 const title = "Ronak Patel | Full Stack Developer";
 const description =
   "A self-proclaimed developer who specializes in full stack development.";
-const url = "https://ronak-portfolio.vercel.app";
+const url = "https://ronakpatel.vercel.app/";
 
 export const metadata: Metadata = {
   metadataBase: new URL(url),
@@ -39,6 +39,7 @@ export const metadata: Metadata = {
     title,
     description,
     siteName: title,
+    images: [],
   },
   icons: {
     icon: "/favicon.ico",
