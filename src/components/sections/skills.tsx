@@ -1,12 +1,12 @@
-import { TECHNOLOGIES } from '@/lib/data';
-import Tag from '@/components/data-display/tag';
-import TechDetails from '@/components/data-display/tech-details';
-import Typography from '@/components/general/typography';
-import Container from '@/components/layout/container';
+import { TECHNOLOGIES } from "@/lib/data";
+import Tag from "@/components/data-display/tag";
+import TechDetails from "@/components/data-display/tech-details";
+import Typography from "@/components/general/typography";
+import Container from "@/components/layout/container";
 
 const SkillsSection = () => {
   return (
-    <Container>
+    <Container id="skills">
       <div className="flex flex-col items-center gap-4">
         <div className="self-center">
           <Tag label="Skills" />

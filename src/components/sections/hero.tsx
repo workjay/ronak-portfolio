@@ -1,10 +1,11 @@
 import Image from 'next/image';
 import { MapPin } from 'lucide-react';
 
-import SagarHeadshot from '/public/images/sagar-headshot.jpg';
+import SagarHeadshot from '/public/images/ronak-profile-picture.jpeg';
 import SocialIcons from '@/components/data-display/social-icons';
 import Typography from '@/components/general/typography';
 import Container from '@/components/layout/container';
+import { calculateExperience } from '@/lib/utils';
 
 const HeroSection = () => {
   return (
@@ -27,15 +28,14 @@ const HeroSection = () => {
         <div className="flex max-w-3xl flex-grow flex-col justify-center gap-8 md:order-first md:items-start md:justify-center 2xl:gap-12">
           <div className="flex flex-col gap-2">
             <Typography variant="h1">
-              Hi, I&apos;m Sagar{' '}
+              Hi, I&apos;m Ronak{' '}
               <span className="inline-block animate-waving-hand">👋</span>
             </Typography>
             <Typography>
               I&apos;m a full stack developer (React.js & Node.js) with a focus
-              on creating (and occasionally designing) exceptional digital
-              experiences that are fast, accessible, visually appealing, and
+              on creating exceptional digital experiences that are fast, accessible, visually appealing, and
               responsive. Even though I have been creating web applications for
-              over 7 years, I still love it as if it was something new.
+              over {calculateExperience()} years, I still love it as if it was something new.
             </Typography>
           </div>
           <div className="flex flex-col gap-2">

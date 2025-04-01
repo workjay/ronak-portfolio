@@ -2,6 +2,7 @@ import Typography from '@/components/general/typography';
 import ImageWrapper from '@/components/data-display/image-wrapper';
 import Card from '@/components/layout/card';
 import { ExperienceDetails as ExperienceDetailsProps } from '@/lib/types';
+import Link from 'next/link';
 
 const dateFormatOptions: Intl.DateTimeFormatOptions = {
   year: 'numeric',
@@ -17,16 +18,28 @@ const ExperienceDetails = ({
   startDate,
   endDate,
   summary,
+  url
 }: ExperienceDetailsProps) => {
   return (
     <Card className="mx-auto flex w-full max-w-4xl flex-col justify-between gap-4 p-8 md:flex-row md:gap-8">
       <div className="max-md:order-1 md:w-1/4">
+      {!!url ? (
+        <Link href={url} target="_blank">
+          <ImageWrapper
+            src={logo}
+            srcForDarkMode={darkModeLogo}
+            alt={logoAlt}
+            className="max-w-[120px]"
+          />
+        </Link>
+      ) : (
         <ImageWrapper
           src={logo}
           srcForDarkMode={darkModeLogo}
           alt={logoAlt}
           className="max-w-[120px]"
         />
+      )}
       </div>
       <div className="flex flex-col gap-4 max-md:order-3 md:w-2/4">
         <Typography variant="subtitle" className="font-semibold text-gray-900">

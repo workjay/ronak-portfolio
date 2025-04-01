@@ -25,4 +25,4 @@ $ npm run dev
 
 ## License
 
-Licensed under the [MIT license](https://github.com/workjay/ronak.portfolio/blob/main/LICENSE).
+Licensed under the [MIT license](https://github.com/workjay/ronak-portfolio/blob/main/LICENSE).

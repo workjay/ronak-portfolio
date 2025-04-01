@@ -1,57 +1,49 @@
-import Script from 'next/script';
-import { Inter } from 'next/font/google';
-import { Metadata } from 'next';
+import Script from "next/script";
+import { Inter } from "next/font/google";
+import { Metadata } from "next";
 
-import './globals.css';
-import Header from '@/components/layout/header';
-import { Providers } from '@/lib/providers';
-import Footer from '@/components/layout/footer';
+import "./globals.css";
+import Header from "@/components/layout/header";
+import { Providers } from "@/lib/providers";
+import Footer from "@/components/layout/footer";
 
-const inter = Inter({ subsets: ['latin'] });
+const inter = Inter({ subsets: ["latin"] });
 
-const title = 'Sagar Shah | Full Stack Developer From Ahmedabad, India.';
+const title = "Ronak Patel | Full Stack Developer";
 const description =
-  'A self-proclaimed designer who specializes in full stack development (React.js & Node.js), from Ahmedabad, India.';
-const url = 'https://sagarshah.dev';
+  "A self-proclaimed developer who specializes in full stack development.";
+const url = "https://ronak-portfolio.vercel.app";
 
 export const metadata: Metadata = {
   metadataBase: new URL(url),
   title,
   description,
   keywords: [
-    'Frontend Developer',
-    'Full Stack Developer',
-    'React Developer',
-    'Next.js Developer',
+    "Frontend Developer",
+    "Full Stack Developer",
+    "React Developer",
+    "Next.js Developer",
+    "Backend Developer",
+    "Node.js Developer",
+    "Web Developer",
+    "Software Developer",
   ],
-  creator: 'Sagar Shah',
+  creator: "Ronak Patel",
   themeColor: [
-    { media: '(prefers-color-scheme: light)', color: 'white' },
-    { media: '(prefers-color-scheme: dark)', color: 'black' },
+    { media: "(prefers-color-scheme: light)", color: "white" },
+    { media: "(prefers-color-scheme: dark)", color: "black" },
   ],
   openGraph: {
-    type: 'website',
+    type: "website",
     url,
     title,
     description,
     siteName: title,
-    images: [
-      {
-        url: '/images/open-graph-sagar.png',
-      },
-    ],
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title,
-    description,
-    creator: '@shahsagarm',
-    images: '/images/open-graph-sagar.png',
   },
   icons: {
-    icon: '/favicon.ico',
-    shortcut: '/favicon-16x16.png',
-    apple: '/apple-touch-icon.png',
+    icon: "/favicon.ico",
+    shortcut: "/favicon-16x16.png",
+    apple: "/apple-touch-icon.png",
   },
 };
 

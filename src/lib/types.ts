@@ -10,6 +10,7 @@ export type TechDetails = {
 export type ExperienceDetails = {
   logo: string | StaticImageData;
   darkModeLogo?: string | StaticImageData;
+  url?: string;
   logoAlt: string;
   position: string;
   currentlyWorkHere?: boolean;
@@ -22,8 +23,9 @@ export type ProjectDetails = {
   name: string;
   description: string;
   url: string;
-  previewImage: string | StaticImageData;
+  previewImage: string;
   technologies: string[];
+  title?: string;
 };
 
 export type TestimonialDetails = {
