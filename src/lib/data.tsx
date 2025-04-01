@@ -75,6 +75,11 @@ export const SOCIAL_LINKS = [
 
 export const TECHNOLOGIES: TechDetails[] = [
   {
+    label: "Laravel",
+    logo: LogoLaravel,
+    url: "https://laravel.com/",
+  },
+  {
     label: "Javascript",
     logo: LogoJavascript,
     url: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
@@ -195,11 +200,6 @@ export const TECHNOLOGIES: TechDetails[] = [
     label: "Strapi",
     logo: LogoStrapi,
     url: "https://strapi.io/",
-  },
-  {
-    label: "Laravel (Basic)",
-    logo: LogoLaravel,
-    url: "https://laravel.com/",
   },
   {
     label: "Git",
